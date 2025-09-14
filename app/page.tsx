@@ -50,14 +50,11 @@ export default async function Home() {
           </a>
         </div>
         
-        {/* Hidden admin access - click on last updated time */}
+        {/* Removed secondary hidden login - now only 5-click method */}
         <div className="text-center mt-4">
-          <a 
-            href="/admin/login"
-            className="text-xs text-gray-400 hover:text-gray-600 select-none"
-          >
+          <span className="text-xs text-gray-400 select-none">
             Ostatnia aktualizacja: {new Date().toLocaleString('pl-PL')}
-          </a>
+          </span>
         </div>
       </section>
 

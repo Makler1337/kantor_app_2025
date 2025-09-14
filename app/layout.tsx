@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Providers } from './providers'
+import AdminButton from '@/components/AdminButton'
+import HiddenLogin from '@/components/HiddenLogin'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -48,11 +50,13 @@ export default function RootLayout({
             <header className="bg-white shadow-sm">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center py-6">
-                  <div>
-                    <h1 className="text-3xl font-bold text-gray-900">
-                      Kantor Bychawa
-                    </h1>
-                    <p className="text-sm text-gray-600">Beata Dorsz - Wymiana Walut</p>
+                  <div className="relative">
+                    <HiddenLogin>
+                      <h1 className="text-3xl font-bold text-gray-900">
+                        Kantor Bychawa
+                      </h1>
+                      <p className="text-sm text-gray-600">Beata Dorsz - Wymiana Walut</p>
+                    </HiddenLogin>
                   </div>
                   <nav className="hidden md:flex space-x-8">
                     <a href="/" className="text-gray-700 hover:text-primary-600">
@@ -64,6 +68,7 @@ export default function RootLayout({
                     <a href="#kontakt" className="text-gray-700 hover:text-primary-600">
                       Kontakt
                     </a>
+                    <AdminButton />
                   </nav>
                 </div>
               </div>

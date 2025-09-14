@@ -49,6 +49,13 @@ export default async function Home() {
             📊 Zobacz historię kursów walut
           </a>
         </div>
+        
+        {/* Removed secondary hidden login - now only 5-click method */}
+        <div className="text-center mt-4">
+          <span className="text-xs text-gray-400 select-none">
+            Ostatnia aktualizacja: {new Date().toLocaleString('pl-PL')}
+          </span>
+        </div>
       </section>
 
       {/* Contact Section */}

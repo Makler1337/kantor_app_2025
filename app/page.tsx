@@ -49,6 +49,16 @@ export default async function Home() {
             📊 Zobacz historię kursów walut
           </a>
         </div>
+        
+        {/* Hidden admin access - click on last updated time */}
+        <div className="text-center mt-4">
+          <a 
+            href="/admin/login"
+            className="text-xs text-gray-400 hover:text-gray-600 select-none"
+          >
+            Ostatnia aktualizacja: {new Date().toLocaleString('pl-PL')}
+          </a>
+        </div>
       </section>
 
       {/* Contact Section */}

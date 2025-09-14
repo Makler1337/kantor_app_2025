@@ -48,11 +48,13 @@ export default function RootLayout({
             <header className="bg-white shadow-sm">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center py-6">
-                  <div>
-                    <h1 className="text-3xl font-bold text-gray-900">
-                      Kantor Bychawa
-                    </h1>
-                    <p className="text-sm text-gray-600">Beata Dorsz - Wymiana Walut</p>
+                  <div className="relative">
+                    <a href="/admin/login" className="block group">
+                      <h1 className="text-3xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors">
+                        Kantor Bychawa
+                      </h1>
+                      <p className="text-sm text-gray-600">Beata Dorsz - Wymiana Walut</p>
+                    </a>
                   </div>
                   <nav className="hidden md:flex space-x-8">
                     <a href="/" className="text-gray-700 hover:text-primary-600">

@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.currency-table {
+  @apply bg-white shadow-lg rounded-lg overflow-hidden;
+}
+
+.currency-row {
+  @apply border-b border-gray-200 hover:bg-gray-50 transition-colors;
+}
+
+.currency-cell {
+  @apply px-6 py-4 text-sm;
+}
+
+.rate-positive {
+  @apply text-green-600 font-semibold;
+}
+
+.rate-negative {
+  @apply text-red-600 font-semibold;
+}

@@ -1,0 +1,10 @@
+{
+  "/not-found": "app/not-found.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/admin/login/page": "app/admin/login/page.js",
+  "/admin/dashboard/page": "app/admin/dashboard/page.js",
+  "/page": "app/page.js",
+  "/admin/dashboard/charts/page": "app/admin/dashboard/charts/page.js",
+  "/wykresy/page": "app/wykresy/page.js",
+  "/api/currency/history/route": "app/api/currency/history/route.js"
+}
